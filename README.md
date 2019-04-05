@@ -33,6 +33,13 @@ function create () {
 };
 ```
 
+The button sprite is full configurable at instance.button:
+```javascript
+var butt= new Phaser.Button({...});
+butt.button;
+console.log(butt.button); // will return the sprite object
+```
+
 # Configuration
 
 new Phaser.Button(this, config);
