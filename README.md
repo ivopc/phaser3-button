@@ -72,10 +72,12 @@ new Phaser.Button(this, {
 - **x:** initial x position.
 - **y:** initial y position.
 - **spritesheet:** the button spritesheet.
+- **on:** the button event listeners controllers.
 - **on.click:** this event is called when user click on the button.
 - **on.over:** this event is called when the mouse is over of the button (hover).
 - **on.up:** this event is called when the user release the click after clicked on the button.
 - **on.out:** this event is called when the mouse is out of button (only will call if the user interact with the button).
+- **frames:** change the sprite (button) frame when the event is called.
 - **frames.click:** will change the sprite(sheet) of the button when user click.
 - **frames.over:** will change the sprite(sheet) of the button when mouse over.
 - **frames.up:** will change the sprite(sheet) of the button when the user release the button after click.
