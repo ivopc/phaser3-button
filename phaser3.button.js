@@ -14,8 +14,8 @@
         config.on.out = config.on.out || function () {};
 
         config.frames = config.frames || {};
-        config.frames.click = config.frames.click || 1;
-        config.frames.over = config.frames.over || 2;
+        config.frames.click = config.frames.click || 0;
+        config.frames.over = config.frames.over || 0;
         config.frames.up = config.frames.up || 0;
         config.frames.out = config.frames.out || 0;
 
