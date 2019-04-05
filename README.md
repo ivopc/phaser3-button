@@ -69,4 +69,12 @@ new Phaser.Button(this, {
 - **on.over:** this event is called when the mouse is over of the button (hover).
 - **on.up:** this event is called when the user release the click after clicked on the button.
 - **on.out:** this event is called when the mouse is out of button (only will call if the user interact with the button).
+- **frames.click:** will change the sprite(sheet) of the button when user click.
+- **frames.over:** will change the sprite(sheet) of the button when mouse over.
+- **frames.up:** will change the sprite(sheet) of the button when the user release the button after click.
+- **frames.out:** change when the cursor is out of the button (by default this frame is set as initial frame).
+
+# License
+
+phaser3.button is released under the [MIT License](https://opensource.org/licenses/MIT).
 
