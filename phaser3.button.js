@@ -12,7 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ;(function (Phaser) {
     Phaser.Button = function (self, config) {
         this.self = self;
-        this.button = null;
+        this.sprite = null;
 
         config.x = config.x || 0;
         config.y = config.y || 0;
@@ -37,7 +37,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     };
 
     Phaser.Button.prototype.addButtSprite = function () {
-        this.button = this.self.add.sprite(
+        this.sprite = this.self.add.sprite(
             this.config.x,
             this.config.y,
             this.config.spritesheet
@@ -47,31 +47,31 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     };
 
     Phaser.Button.prototype.setListeners = function () {
-        this.button.setInteractive({
+        this.sprite.setInteractive({
             useHandCursor: true
         });
 
-        this.button.on("pointerdown", this.listeners.click.bind(this));
-        this.button.on("pointerover", this.listeners.over.bind(this));
-        this.button.on("pointerup", this.listeners.up.bind(this));
-        this.button.on("pointerout", this.listeners.out.bind(this));
+        this.sprite.on("pointerdown", this.listeners.click.bind(this));
+        this.sprite.on("pointerover", this.listeners.over.bind(this));
+        this.sprite.on("pointerup", this.listeners.up.bind(this));
+        this.sprite.on("pointerout", this.listeners.out.bind(this));
     };
 
     Phaser.Button.prototype.listeners = {
         click: function () {
-            this.button.setFrame(this.config.frames.click);
+            this.sprite.setFrame(this.config.frames.click);
             this.config.on.click();
         },
         over: function () {
-            this.button.setFrame(this.config.frames.over);
+            this.sprite.setFrame(this.config.frames.over);
             this.config.on.over();
         },
         up: function () {
-            this.button.setFrame(this.config.frames.up);
+            this.sprite.setFrame(this.config.frames.up);
             this.config.on.up();
         },
         out: function () {
-            this.button.setFrame(this.config.frames.out);
+            this.sprite.setFrame(this.config.frames.out);
             this.config.on.out();
         }
     };
