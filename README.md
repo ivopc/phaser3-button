@@ -36,8 +36,8 @@ function create () {
 The button sprite is full configurable at instance.button, like this:
 ```javascript
 var butt = new Phaser.Button({...});
-butt.button;
-console.log(butt.button); // will return the sprite object
+butt.sprite;
+console.log(butt.sprite); // will return the sprite object
 ```
 
 # Configuration
