@@ -2,7 +2,7 @@
 Button for Phaser 3
 
 # Demo
-[Click here](http://ivounicsul.000webhostapp.com/phaser/button.html)
+[Click here](https://ivopc.000webhostapp.com/phaser-button/)
 
 # Usage
 Import phaser3-button file:
