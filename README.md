@@ -1,3 +1,4 @@
+# (Outdated project, crap architecture. Planning to write a new one)
 # Phaser3-Button
 Button for Phaser 3
 
